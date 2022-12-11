@@ -5,8 +5,9 @@ JOHN = NAMES[0]
 PAUL = NAMES[1]
 
 JOHN_PAUL = NAMES[:2]
-GEORGE_RINGO = NAMES[2:]
+GEORGE_RINGO = NAMES[1:]
 REVERSE = NAMES[::-1]
+Second_REVERSE = NAMES[::-2]
 EVERY_OTHER = NAMES[::2]
 
 print(sum(AGES))
@@ -16,3 +17,4 @@ print(max(AGES))
 print(JOHN_PAUL)
 print(GEORGE_RINGO)
 print(REVERSE)
+print(Second_REVERSE)

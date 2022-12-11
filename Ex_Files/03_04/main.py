@@ -28,7 +28,16 @@ with open("laureates.csv", "r") as f:
 
 laureates_beginning_with_a = []
 # LinkedIn learner code here
+count = 0
+for laurete in laureates:
+    name = laurete["name"]
+    if name[0] == "A":
+        print(f"Name {name}")
+        laureates_beginning_with_a.append(laurete)
+        count += 1
 
+pprint(laureates_beginning_with_a)
 
 with open("laureates.json", "w") as f:
     json.dump(laureates_beginning_with_a, f, indent=2)
+print(f"Count is {count}")
